@@ -1,0 +1,21 @@
+{
+  "lastUpdated": "2025-10-27T00:00:00Z",
+  "marathonStart": "2025-10-27T00:00:00-07:00",
+  "currentDay": 1,
+  "stats": {
+    "totalSubs": 0,
+    "marathonSubs": 0,
+    "totalFollowers": 0,
+    "marathonFollowers": 0,
+    "totalChats": 0
+  },
+  "dailySubs": {
+    "day1": 0,
+    "day2": 0,
+    "day3": 0,
+    "day4": 0,
+    "day5": 0
+  },
+  "topGifters": [],
+  "topChatters": []
+}
