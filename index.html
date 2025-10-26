@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAR-ATON US EDITION TRACKER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <div class="container">
+            <h1 class="main-title">MAR-ATON US EDITION TRACKER</h1>
+        </div>
+    </header>
+
+    <!-- DAY COUNTER SECTION -->
+    <section class="day-section">
+        <div class="container">
+            <div class="day-counter">
+                <span class="day-label">DAY</span>
+                <span class="day-number" id="dayNumber">1</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARLON'S PROFILE SECTION -->
+    <section class="profile-section">
+        <div class="container">
+            <a href="https://www.twitch.tv/marlon" target="_blank" class="profile-card">
+                <div class="profile-avatar">
+                    <svg class="profile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <h2 class="profile-name">Marlon</h2>
+                <p class="profile-link">@marlon on Twitch</p>
+                <div class="profile-badge">LIVE NOW</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- MAIN STATS SECTION -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-box stat-red">
+                    <div class="stat-icon">🎁</div>
+                    <div class="stat-number" id="marathonSubs">0</div>
+                    <div class="stat-label">SUBS DURING MARATHON</div>
+                </div>
+                <div class="stat-box stat-white">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number" id="totalFollowers">0</div>
+                    <div class="stat-label">TOTAL FOLLOWERS</div>
+                </div>
+                <div class="stat-box stat-blue">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-number" id="marathonFollowers">0</div>
+                    <div class="stat-label">FOLLOWERS DURING MARATHON</div>
+                </div>
+                <div class="stat-box stat-red">
+                    <div class="stat-icon">💬</div>
+                    <div class="stat-number" id="totalChats">0</div>
+                    <div class="stat-label">TOTAL CHATS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DAILY SUBS SECTION -->
+    <section class="daily-subs-section">
+        <div class="container">
+            <h2 class="section-title">SUBS DURING MARATHON FOR EACH DAY</h2>
+            <div class="day-selector" id="daySelector"></div>
+            <div class="daily-stat-display">
+                <div class="daily-stat-number" id="dailySubNumber">0</div>
+                <div class="daily-stat-label">Subs on <span id="selectedDayLabel">Day 1</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEADERBOARD SECTION -->
+    <section class="leaderboard-section">
+        <div class="container">
+            <h2 class="section-title">LEADERBOARD</h2>
+            <div class="leaderboard-grid">
+                <!-- TOP GIFTERS -->
+                <div class="leaderboard-card">
+                    <h3 class="leaderboard-title">TOP GIFTERS</h3>
+                    <div class="leaderboard-list" id="topGifters"></div>
+                </div>
+                <!-- TOP CHATTERS -->
+                <div class="leaderboard-card">
+                    <h3 class="leaderboard-title">TOP CHATTERS</h3>
+                    <div class="leaderboard-list" id="topChatters"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARATHON TOP GIFTERS SECTION -->
+    <section class="marathon-gifters-section">
+        <div class="container">
+            <h2 class="section-title highlight">TOP GIFTERS DURING THE ENTIRE MARATHON</h2>
+            <div class="marathon-leaderboard" id="marathonTopGifters"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>MADE BY <a href="https://www.twitch.tv/0pogix" target="_blank" class="footer-link">POGIX</a></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
